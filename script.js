@@ -28,7 +28,6 @@ function convertFracToDecimal(input, inputBase){
 	let res = 0;
 	input.split("").forEach((x, i) => {
 		res += parseInt(x, inputBase) / (inputBase ** (i+1));
-		console.log(res);
 	})
 	
 	return res;
